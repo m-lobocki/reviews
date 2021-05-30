@@ -1,8 +1,8 @@
-from django.http import HttpResponse, HttpResponseNotFound
+from django.http import HttpResponse
 from django.views.decorators.http import require_http_methods
 
-from decorators import logged
-from models import rest_response, filter_model, merge_body_model
+from rest.decorators import logged
+from rest.utils import rest_response, filter_model, merge_body_model
 from rest.models import Review, Film
 
 

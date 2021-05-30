@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 from django.http import HttpRequest, HttpResponseForbidden, HttpResponse
 from django.views.decorators.http import require_http_methods
 
-from decorators import logged
+from rest.decorators import logged
 
 
 @require_http_methods(["POST"])

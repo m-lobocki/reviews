@@ -1,7 +1,7 @@
 from django.views.decorators.http import require_http_methods
 
-from models import filter_model
-from models.rest_response import rest_response
+from rest.utils import filter_model
+from rest.utils import rest_response
 from rest.models import Film
 
 
