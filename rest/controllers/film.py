@@ -7,7 +7,9 @@ from rest.models import Film
 
 @require_http_methods(["GET"])
 def get_all(request):
-    films = filter_model(Film, request.GET)
+    films = filter_model(Film, request.GET, custom_filters={
+        'releaseDate__year': 'year'
+    })
     return rest_response(films)
 
 

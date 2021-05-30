@@ -9,4 +9,3 @@ class Film(models.Model):
     description = models.TextField()
     releaseDate = models.DateField()
     actors = models.ManyToManyField(Person, related_name='films_played_in')
-    # moze dodaj genre?
